@@ -1,0 +1,174 @@
+$orange: #fca210;
+.cupcake {
+	color:  #fff;
+	padding: 0 0 50px;
+	background: radial-gradient(at bottom left, #e44245, #a4141a);
+	-webkit-background: radial-gradient(at bottom left, #e44245, #a4141a);
+}
+.slides-list {
+	.container {
+		position: relative;
+		min-height: 565px;
+	}
+}
+.slide {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	top: 0;  bottom: 0;
+	opacity: 0;
+	transition: opacity .6s ease-out;
+}
+
+.slide_active {
+	z-index: 1;
+	opacity: 1;
+}
+
+.cupcake__lettering {
+	position: absolute;
+	top: 30%;
+	z-index: 0;
+	margin: 0;
+	opacity: 0.1;
+	font:400 145px als_malinaregular, "Comic Sans MS", cursive;
+	padding: 0 30px;
+}
+.cupcake__info,
+.cupcake__photo,
+.cupcake__desc {
+}
+
+.cupcake__info {
+	width: 124px;
+	text-align: center;
+	
+}
+
+.cupcake__info-hover {	
+	position: relative;
+	margin: 0 auto 202px auto;	
+	&:hover {
+		.icon_ingred {
+			background: $orange url(../assets/images/redwhisk.png) center center no-repeat;
+		}
+		.cupcake__recipe {
+			left: 100%;
+			opacity: 0.9;
+			transition: opacity 0.6s;
+		}
+	}
+}
+
+.icon_ingred {
+	background: #AC2F32 url(../assets/images/whisk.png) center center no-repeat;
+}
+.cupcake__recipe {
+	width: 380px; 
+	position: absolute;
+	z-index: 10;
+	right: 500%; 
+	top: -70%;
+	background: #fff;
+	border-radius: 20px;
+	opacity: 0;
+	padding: 40px 70px;
+	text-align: left;
+	&:before {
+		content: '';
+    	position: absolute;
+    	right: 100%; top: 50px;
+    	border: 24px solid transparent;
+    	border-right: 12px solid  #fff;
+	}
+}
+
+.cupcake__element {
+	font: 400 16px/40px Helvetica, sans-serif;
+	color:  #575757;
+}
+.cupcake__ingred-img{
+	width: 20px;
+	height: 20px;
+}
+.cupcake__td_amount {
+	text-align: right;
+}
+.cupcake__info-title {
+	font: 400 13px/14px Helvetica, sans-serif;
+}
+
+.cupcake__shelf-life {
+	margin: 0 auto;
+}
+.cupcake__exp {
+	font: 400 13px/15px Arial, sans-serif;
+}
+.cupcake__exp-time {
+	font: 400 24px/26px als_malinaregular, "Comic Sans MS", cursive;
+}
+
+.cupcake__photo {
+	position: relative;
+	z-index: 1;
+	width: 40%;
+}
+
+.cupcake__img {
+	max-width: 100%;
+	max-height: 85%;
+}
+.cupcake__desc {
+	width: 401px;
+	font: 400 15px/21px Arial, sans-serif;
+}
+
+.cupcake__price,
+.cupcake__btn-order {
+	vertical-align: middle;
+}
+.cupcake__price {
+	font: 400 62px/62px als_malinaregular, "Comic Sans MS", cursive;
+	margin: 0 48px 0 0;
+}
+
+.cupcake__btn-order {
+	display: inline-block;
+	padding: 13px 23px; 
+	border-radius: 20px;
+	text-decoration: none;
+	color: #a4141c;
+	background: $orange;
+	font: 700 14px Arial, sans-serif;
+	&:hover {
+		color: $orange;
+		background: #641A00;
+	}
+}
+
+.slide__controls {
+	list-style: none;
+	text-align: center;
+}
+
+.slide__control {
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: #fff;
+	margin: 0 32px 0 0;
+	cursor: pointer;
+	&:before {
+		content: '';
+		display: block;
+		width: 16px;
+		height: 16px;
+		margin: -4px 0 0 -4px;
+	}	
+}
+
+.slide__control_active {
+	background: $orange;
+}

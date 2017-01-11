@@ -1,0 +1,52 @@
+.why {
+	background: url('../assets/images/whychef.png') no-repeat 75% bottom, radial-gradient(at 70% 58%, #fefefe, #c8c8c8);
+}
+
+.why__left {
+	width: 62.5%;
+}
+
+.why__desc {
+	width: 59%;
+	margin: 0 0 60px 0;
+	.section__title {
+		color: #2b2f5f;
+	}
+}
+.why__txt {
+}
+
+.why__list {
+	list-style: none;
+}
+
+.why__item {
+	display: inline-block;
+	vertical-align: top;
+	width: 30%;	
+}
+.why__icon{
+	height: 107px;
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 4%;
+		width: 90px;
+		height: 90px;
+		border-radius: 50%;
+		background: #000;
+		opacity: .1;
+	}
+}
+.why__icon-img {	
+	display: block;
+	position: relative;
+	top: 7%;
+	max-width: 45%;
+}
+.why__item-title {
+	width: 141px;
+	font: 16px als_malinaregular, cursive;
+	color: #747474;
+}

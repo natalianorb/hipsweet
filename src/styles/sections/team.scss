@@ -1,0 +1,200 @@
+$orange: #fca210;
+%clearfix {
+	&:after {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+.team {
+  background: radial-gradient(at 20% 85%, #fcfbfb 35%, #cbcbcb);
+  padding: 50px 0 100px;
+}
+
+.tabs {
+  .section__title {
+    display: inline-block;
+    width: 325px;
+    color: #2b2f60;
+    margin: 0 50px 0 0;
+  }
+}
+.tabs__list {
+  display: inline-block;
+}
+.tabs__item {
+  display: inline-block;
+  width: 230px;
+  padding: 18px 28px 22px;
+  border-radius: 20px;
+  color: #8d8d8d;
+  cursor: pointer;
+  &:hover {
+    background: #893213;
+    box-shadow: inset -2px 5px 5px -4px #fff;
+    color: #fff;
+    .tabs__link {
+      color: $orange;
+    }
+  }
+}
+.tabs__item_active {
+  position: relative;
+  background: #893213;
+  color: #fff;
+  box-shadow: inset -2px 5px 5px -4px #fff;
+.tabs__link {
+    color: $orange;
+  }
+  &:after {
+     content: '';
+     position: absolute;
+     top: 100%; left: 43%;
+     display: block;
+     width: 0;
+     border: 20px solid transparent;
+     border-top: 10px solid #893213;
+   }
+}
+.tabs__link {
+  text-decoration: none;
+  color: #2b2f60;
+  font: 400 30px als_malinaregular, "Comic Sans MS", cursive;
+}
+
+.tabs__content {
+  height: 507px;
+  padding: 55px 0 0;
+}
+.tabs__content-item {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  color: #747474;
+  &.tabs__content-item_active {
+     height: 100%;
+     opacity: 1;
+  }
+}
+
+.tabs__left,
+.tabs__center,
+.tabs__right {
+  display: inline-block;
+  vertical-align: top;
+}
+.tabs__left,
+.tabs__right {
+  padding: 20px 0  0;
+  font: italic 14px / 21px Arial, sans-serif;
+}
+.tabs__left {
+  width: 25%;
+}
+
+.tabs__center,
+.tabs__right {
+  width: 36%;
+}
+.tabs__center {
+    position: relative;
+}
+.tabs__center:before {
+  position: absolute;
+  width: 50px;
+  height: 41px;
+  left: 20%;
+  content: '';
+  background: url(./../assets/images/quote.png) no-repeat;
+}
+.tabs__img {
+  display: block;
+  max-width: 100%;
+  max-height: 452px;    
+  margin: 0 auto;
+}
+
+.form {
+    position: relative;
+    margin: 0 auto;
+    color: #fff;
+    width: 843px;
+    background: url(./../assets/images/team_choco.png) center center no-repeat;
+    border-radius: 20px;
+    @extend %clearfix;
+}
+.form__left,
+.form__right {
+    width: 50%;
+}
+.form__left {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 41%;
+    margin: auto;
+    font: 400 64px als_malinaregular, "Comic Sans MS",  cursive;
+    text-align: center;
+}
+
+.form__right {
+    float: right;
+    height: 100%;
+    padding: 80px 50px;
+    background: rgba(#1d1d20, .6);
+    border-top-right-radius: 20px;    
+    border-bottom-right-radius: 20px;
+}
+
+.form__input {
+    display: inline-block;
+    width: 277px;
+    height: 35px;
+    margin: 0 0 35px;
+    color: #fff;
+    background: transparent;
+    font: 400 16px / 21.67px Arial, sans-serif;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+}
+.form__checkbox {
+  display: none;
+  &:checked + .form__lbl:before {
+    background: url(./../assets/images/check.png) no-repeat 1px -2px, #fff;
+  }
+}
+
+.form__lbl {
+    display: block;
+    &:hover {
+      cursor: pointer;
+    }
+    &:before {
+      display: inline-block;
+      content: '';
+      width: 12px;
+      height: 12px;
+      background: #fff;
+      border: 1px solid #2b1109;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+}
+
+.form__submit {
+    display: block;
+    position: absolute;
+    bottom: -48px;
+    right: -48px;
+    width: 96px;
+    height: 96px;
+    border: none;
+    border-radius: 50%;
+    background: url(./../assets/images/arrow.png) center no-repeat, #ffb100;
+    outline: none;
+    &:hover {
+        background: url(./../assets/images/arrow_hover.png) center no-repeat, #641a00;
+    }
+}

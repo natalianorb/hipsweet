@@ -1,0 +1,48 @@
+.faq {
+    color: #fff;
+    min-height: 600px;
+    background:
+      linear-gradient(to top right, rgba(#d93c40, .9), rgba(#a9191f, .9)) no-repeat,
+      url(../assets/images/faq_cupcake.png) left bottom no-repeat,
+      url(../assets/images/faq_cookie.png) 10% 30% no-repeat,
+      url(../assets/images/faq_cupcake2.png) right bottom no-repeat,
+      url(../assets/images/faq_bagel.png) right top no-repeat,
+      url(../assets/images/faq_choco.png) 80% 135% no-repeat,
+      url(../assets/images/faq_nougat.png) 60% top no-repeat,
+      url(../assets/images/faq_choco2.png) left top no-repeat;
+
+}
+.acc {
+  height: 382px;
+}
+.acc__item {
+    font: 400 22px / 34.293px Arial, sans-serif;
+}
+.acc__item_active {
+  color: #ffb100;
+  & .acc__txt {
+  max-height: 500px;
+  opacity: 1;
+  }
+}
+.acc__link {
+    font: 400 22px / 52px Arial, sans-serif;
+    text-decoration: none;
+    border-bottom: 1px dashed;
+    color: #fff;
+    outline: none;
+    &:hover{
+        color: #ffb100;
+    }
+}
+.acc__link_active {
+    color: #ffb100;
+    border: none;
+}
+.acc__txt {
+    max-height: 0;
+    overflow: hidden;
+    transition: .6s ease-out;
+    font: 400 16px / 21px Arial, sans-serif;
+    color: #fff;
+}

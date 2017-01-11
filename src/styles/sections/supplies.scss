@@ -1,0 +1,54 @@
+.supplies {
+	background: url('../assets/images/pattern.png') repeat, radial-gradient(at right bottom, #fcb406, #fdb111);
+	.section__title {
+		color: #393939;
+		text-align: center;
+	}
+}
+
+.supplies__txt {
+	width: 775px;
+	margin: 0 auto 30px;
+	color: #883213;
+	text-align: center;
+}
+
+.sweets {
+	list-style:none;
+}
+
+.sweets__item {
+	display: inline-block;
+	width: 24%;
+	vertical-align: top;
+}
+
+.sweets__img-wrap {
+	position: relative;
+	padding: 50px 0 0 0;
+	&:before {
+		display: block;
+		content: '';
+		width: 177px;
+		height: 177px;
+		margin: 0 auto;
+		border-radius: 50%;
+		background: #e49e11;
+	}
+}
+.sweets__img {
+	max-height: 220px;
+	max-width: 210px;
+	position: absolute;
+	left: 13%; bottom: 0; 
+}
+.sweets__title {
+	text-align: center;
+	color: #393939;
+	font: 400 25px als_malinaregular, "Comic Sans MS", cursive;
+}
+
+.sweets__desc {
+	text-align: center;
+	color: #ab594a;
+}

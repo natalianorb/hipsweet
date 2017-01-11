@@ -1,0 +1,17 @@
+$orange: #fca210;
+
+//layout
+@import "misc/normalize";
+@import "misc/adjustments";
+@import "misc/fonts";
+@import "misc/mixins";
+@import "section";
+
+@import "sections/header";
+@import "sections/cupcake";
+@import "sections/why";
+@import "sections/supplies";
+@import "sections/team";
+@import "sections/faq";
+@import "sections/map";
+@import "sections/footer";
